@@ -18,7 +18,7 @@ DHT11 Sensor Module
 
 MQ2 Gas Sensor Module
 
-Raspberry Pi (or Arduino)
+ESP32
 
 Jumper wires and breadboard
 
