@@ -19,7 +19,6 @@ DHT dht(DHT_PIN, DHT_TYPE);
 
 #define MQ2_PIN 34
 
-
 constexpr char WIFI_SSID[] = "Beckhcmut";
 constexpr char WIFI_PASSWORD[] = "12345678";
 
