@@ -1,43 +1,33 @@
-# DHT11-MQ2
-DHT11 &amp; MQ2 Sensor Integration for IoT Projects
-This repository provides code and documentation for integrating DHT11 (Temperature & Humidity Sensor) and MQ2 (Gas Sensor) into IoT projects using microcontrollers like Arduino or Raspberry Pi. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
+🚀 DHT11 & MQ2 Sensor Integration for IoT Projects 🌐
 
-Features
+This repository provides comprehensive code and documentation for integrating DHT11 (🌡️ Temperature & Humidity Sensor) and MQ2 (🔥 Gas Sensor) into IoT projects using microcontrollers like Arduino or Raspberry Pi. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
 
-DHT11 Sensor: Measures temperature and humidity with easy-to-use digital output.
+✨ Features
 
-MQ2 Sensor: Detects gases like LPG, smoke, methane, and propane.
+🌡️ DHT11 Sensor: Measures temperature and humidity with easy-to-use digital output.
 
-Data Transmission: Supports MQTT, HTTP, and CoAP for sending data to Edge/Fog/Cloud architecture.
+🔥 MQ2 Sensor: Detects gases like LPG, smoke, methane, and propane.
 
-Preprocessing: Filter and transform sensor data before transmission.
+📡 Data Transmission: Supports MQTT, HTTP, and CoAP for sending data to Edge/Fog/Cloud architecture.
 
-Hardware Requirements
+🧠 Preprocessing: Filter and transform sensor data before transmission.
 
-DHT11 Sensor Module
+🛠️ Hardware Requirements
 
-MQ2 Gas Sensor Module
+🧩 DHT11 Sensor Module
 
-ESP32
+🔥 MQ2 Gas Sensor Module
 
-Jumper wires and breadboard
+🖥️ Raspberry Pi (or Arduino)
 
-Setup & Usage
+🔌 Jumper wires and breadboard
 
-Connect the DHT11 and MQ2 sensors to the microcontroller.
+⚙️ Setup & Usage
 
-Install necessary libraries for reading sensor data.
+🛠️ Connect the DHT11 and MQ2 sensors to the microcontroller.
 
-Configure protocols for data transmission (MQTT, HTTP, CoAP).
+🧱 Install necessary libraries for reading sensor data.
 
-Run the script and monitor real-time sensor data.
+🌐 Configure protocols for data transmission (MQTT, HTTP, CoAP).
 
-Applications
-
-Smart Home Systems
-
-Environmental Monitoring
-
-Industrial Safety
-
-Feel free to contribute or report issues. Let’s build something awesome!
+🚀 Run the script and monitor real-time sensor data.
