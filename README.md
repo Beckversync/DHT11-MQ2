@@ -1,6 +1,6 @@
 🚀 DHT11 & MQ2 Sensor Integration for IoT Projects 🌐
 
-This repository provides comprehensive code and documentation for integrating DHT11 (🌡️ Temperature & Humidity Sensor) and MQ2 (🔥 Gas Sensor) into IoT projects using microcontrollers like Arduino or Raspberry Pi. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
+This repository provides comprehensive code and documentation for integrating DHT11 (🌡️ Temperature & Humidity Sensor) and MQ2 (🔥 Gas Sensor) into IoT projects using microcontrollers like ESP32. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
 
 ✨ Features
 
