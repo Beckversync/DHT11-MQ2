@@ -1,36 +1,36 @@
-🚀 DHT11 & MQ2 Sensor Integration for IoT Projects 🌐
+ DHT11 & MQ2 Sensor Integration for IoT Projects 
 
-This repository provides comprehensive code and documentation for integrating DHT11 (🌡️ Temperature & Humidity Sensor) and MQ2 (🔥 Gas Sensor) into IoT projects using microcontrollers like ESP32. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
+This repository provides comprehensive code and documentation for integrating DHT11 (🌡️ Temperature & Humidity Sensor) and MQ2 ( Gas Sensor) into IoT projects using microcontrollers like ESP32. The data collected from these sensors can be processed locally and transmitted to Edge, Fog, or Cloud systems using protocols like MQTT, HTTP, or CoAP.
 
-✨ Features
+ Features
 
-🌡️ DHT11 Sensor: Measures temperature and humidity with easy-to-use digital output.
+ DHT11 Sensor: Measures temperature and humidity with easy-to-use digital output.
 
-🔥 MQ2 Sensor: Detects gases like LPG, smoke, methane, and propane.
+ MQ2 Sensor: Detects gases like LPG, smoke, methane, and propane.
 
-📡 Data Transmission: Supports MQTT, HTTP, and CoAP for sending data to Edge/Fog/Cloud architecture.
+ Data Transmission: Supports MQTT, HTTP, and CoAP for sending data to Edge/Fog/Cloud architecture.
 
-🧠 Preprocessing: Filter and transform sensor data before transmission.
+ Preprocessing: Filter and transform sensor data before transmission.
 
-🛠️ Hardware Requirements
+ Hardware Requirements
 
-🧩 DHT11 Sensor Module
+ DHT11 Sensor Module
 
-🔥 MQ2 Gas Sensor Module
+ MQ2 Gas Sensor Module
 
-🖥️ ESP32
+ ESP32
 
-🔌 Jumper wires and breadboard
+ Jumper wires and breadboard
 
-⚙️ Setup & Usage
+ Setup & Usage
 
-🛠️ Connect the DHT11 and MQ2 sensors to the microcontroller.
+ Connect the DHT11 and MQ2 sensors to the microcontroller.
 
-🧱 Install necessary libraries for reading sensor data.
+ Install necessary libraries for reading sensor data.
 
-🌐 Configure protocols for data transmission (MQTT, HTTP, CoAP).
+ Configure protocols for data transmission (MQTT, HTTP, CoAP).
 
-🚀 Run the script and monitor real-time sensor data.
+ Run the script and monitor real-time sensor data.
 
 
 # Espressif 32: development platform for [PlatformIO](https://platformio.org)
