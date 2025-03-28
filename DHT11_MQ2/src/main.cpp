@@ -18,7 +18,7 @@
 #include "freertos/task.h"
 
 // ----- ĐỊNH NGHĨA CHÂN & CẢM BIẾN -----
-#define DHT_PIN         16    // Chân kết nối cảm biến DHT11
+#define DHT_PIN         16    
 #define DHT_TYPE        DHT11
 DHT dht(DHT_PIN, DHT_TYPE);
 
@@ -87,7 +87,7 @@ void InitWiFi() {
   }
   Serial.println("\nWiFi Connected");
 #if ENCRYPTED
-  // espClient.setCACert(ROOT_CERT);  // Nếu dùng mã hóa, set chứng chỉ CA tại đây.
+
 #endif
 }
 
