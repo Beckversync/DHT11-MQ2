@@ -57,7 +57,7 @@ ThingsBoard tb(mqttClient, MAX_MESSAGE_RECEIVE_SIZE, MAX_MESSAGE_SEND_SIZE, Defa
 bool subscribed = false;
 bool isDhtEnabled = false;
 
-// ----- Lịch bơm -----
+// ----- Lịch -----
 struct TimeSlot {
   String start;
   String end;
