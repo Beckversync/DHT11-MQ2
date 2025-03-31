@@ -18,7 +18,7 @@ This repository provides comprehensive code and documentation for integrating DH
 
  MQ2 Gas Sensor Module
 
-🖥 ESP32
+ ESP32
 
  Jumper wires and breadboard
 
