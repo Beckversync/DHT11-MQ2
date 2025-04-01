@@ -97,25 +97,6 @@ bool reconnect() {
   return true;
 }
 
-// ----- Callback nhận shared attribute "Scheduler" -----
-void processSharedAttributeUpdate(const JsonObjectConst &data) {
-  if (!data.containsKey(DHT_SCHEDULE_KEY)) return;
-
-  dhtSchedule.clear();
-  JsonArrayConst arr = data[DHT_SCHEDULE_KEY].as<JsonArrayConst>();
-  for (JsonObjectConst obj : arr) {
-    if (obj.containsKey("start") && obj.containsKey("end")) {
-      TimeSlot slot;
-      slot.start = obj["start"].as<String>();
-      slot.end   = obj["end"].as<String>();
-      dhtSchedule.push_back(slot);
-    }
-  }
-  Serial.println("Received dht schedule:");
-  for (auto &slot : dhtSchedule) {
-    Serial.println(slot.start + " -> " + slot.end);
-  }
-}
 
 
 
