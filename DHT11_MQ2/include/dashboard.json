@@ -1,0 +1,89 @@
+
+<div style="padding: 16px; font-family: Arial, sans-serif;">
+  <h3>Configure DHT Scheduler</h3>
+  <div id="scheduler-form">
+    <div id="slots-container"></div>
+    <button onclick="addTimeSlot()">+ Add Time Slot</button>
+    <br/><br/>
+    <button onclick="submitScheduler()">✅ Save Scheduler</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  let slotIndex = 0;
+  const slotsContainer = document.getElementById("slots-container");
+
+  function createTimeDropdown(idPrefix) {
+    const select = document.createElement("select");
+    select.id = idPrefix;
+    for (let h = 0; h < 24; h++) {
+      for (let m = 0; m < 60; m += 15) {
+        const timeStr = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+        const option = document.createElement("option");
+        option.value = timeStr;
+        option.text = timeStr;
+        select.appendChild(option);
+      }
+    }
+    return select;
+  }
+
+  function addTimeSlot() {
+    const div = document.createElement("div");
+    div.id = `slot-${slotIndex}`;
+    div.style.marginBottom = "8px";
+
+    const startLabel = document.createElement("label");
+    startLabel.textContent = "Start: ";
+    const startSelect = createTimeDropdown(`start-${slotIndex}`);
+
+    const endLabel = document.createElement("label");
+    endLabel.textContent = " End: ";
+    const endSelect = createTimeDropdown(`end-${slotIndex}`);
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "❌";
+    removeBtn.style.marginLeft = "8px";
+    removeBtn.onclick = () => div.remove();
+
+    div.appendChild(startLabel);
+    div.appendChild(startSelect);
+    div.appendChild(endLabel);
+    div.appendChild(endSelect);
+    div.appendChild(removeBtn);
+
+    slotsContainer.appendChild(div);
+    slotIndex++;
+  }
+
+  function submitScheduler() {
+    const slots = [];
+    for (let i = 0; i < slotIndex; i++) {
+      const slotDiv = document.getElementById(`slot-${i}`);
+      if (slotDiv) {
+        const start = document.getElementById(`start-${i}`).value;
+        const end = document.getElementById(`end-${i}`).value;
+        if (start && end && start < end) {
+          slots.push({ start, end });
+        }
+      }
+    }
+
+    const payload = {
+      Scheduler: slots
+    };
+
+    console.log("Sending Shared Attributes:", JSON.stringify(payload));
+    
+    // Send shared attribute to ThingsBoard
+    if (widgetContext && widgetContext.sendSharedAttributes) {
+      widgetContext.sendSharedAttributes(payload);
+      widgetContext.showSuccessToast("Scheduler saved successfully!");
+    } else {
+      alert("widgetContext not available. This code must be run inside ThingsBoard Custom Widget.");
+    }
+  }
+
+  // Add default slot for demo
+  addTimeSlot();
+
